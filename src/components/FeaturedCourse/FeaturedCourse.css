@@ -1,0 +1,24 @@
+.FeaturedCourse {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid gray;
+    justify-content: space-between;
+}
+
+.FeaturedCourse_Img {
+    display: flex;
+    width: 18%;
+}
+
+.FeaturedCourse_Info {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.FeaturedCourse_EndTag {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
