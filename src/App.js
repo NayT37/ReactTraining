@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import CoursesList from './components/CoursesList/CoursesList';
+import FilterResults from './components/FilterResults/FilterResults';
+import MainBar from './components/MainBar/MainBar';
+import AuxBar from './components/AuxBar/AuxBar';
+
 class App extends Component {
+
   render() {
+    let _actualPage = 1;
+    let _totalPages = 10;
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <AuxBar />
+        <MainBar />
+
+        <div className="Container">
+          <section className="MainSection MainSection__Filter">
+            {/* This section must disappear when responsive comes out */}
+            <FilterResults />
+          </section>
+          <section className="MainSection MainSection__Courses">
+            <p>Page {_actualPage} of {_totalPages} results</p>
+            {/* All courses, including featured courses */}
+            <CoursesList />
+          </section>
+        </div>
+
       </div>
     );
   }
