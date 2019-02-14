@@ -1,0 +1,54 @@
+.DropDown {
+    font-weight: bold;
+    font-size: 18pt;
+    position: relative;
+    color: white;
+}
+
+.DropDown>div {
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.DropDown__Container {
+    border: 1px solid white;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.DropDown__Container>p {
+    margin-right: 0.5rem;
+}
+
+.TriangleDown {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid white;
+}
+
+.DropDown__List {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+.DropDown__List>span {
+    display: flex;
+    background-color: #005694;
+    border-bottom: 1px solid white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.DropDown__List>span>p {
+    margin: 0.3rem;
+}

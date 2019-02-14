@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CoursesList.css';
 import FeaturedCourse from '../FeaturedCourse/FeaturedCourse';
 import DefaultCourse from '../DefaultCourse/DefaultCourse';
+import DropDown from '../DropDown/DropDown';
 
 class CoursesList extends Component {
 
@@ -33,7 +34,6 @@ class CoursesList extends Component {
     GetDefaultCourses() {
         fetch('https://api.cebroker.com/v2/search/courses/?expand=totalItems&pageIndex=1&pageSize=18&sortField=RELEVANCE&profession=36&courseType=CD_ANYTIME&sortShufflingSeed=27')
             .then((response => {
-                // console.log(response.json());
                 return response.json();
             }))
             .then((courses) => {
@@ -60,7 +60,10 @@ class CoursesList extends Component {
                     <div>
                         <p>Sort By: </p>
                         <div>
-                            <p>Desplegable</p>
+                            {/*                             <DropDown className="DropDown_White"
+                                itemsToDrop={["Relevance", "Price", "Name"]}
+                            /> */}
+                            <p>Relevance</p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +88,7 @@ class CoursesList extends Component {
                 </div>
                 <div>
                     {/*    This is for debuggin porpuses {console.log(this.state.defaultCoursesArr)}   */}
-                    {console.log(this.state.defaultCoursesArr)}
+                    {/*                     {console.log(this.state.defaultCoursesArr)} */}
                     {/* Rendering Default Courses from DB */}
                     {
                         filteredCoursesList.map(dcourse => {
