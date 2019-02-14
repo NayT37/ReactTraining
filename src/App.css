@@ -8,6 +8,7 @@
 
 body {
     background-color: #f7fbfc;
+    min-width: 38rem;
 }
 
 button {
@@ -68,7 +69,7 @@ nav {
     display: flex;
     background-color: white;
     flex-direction: column;
-/*     padding: 0.75rem 1rem; */
+    /*     padding: 0.75rem 1rem; */
     box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.05);
     height: fit-content;
 }
