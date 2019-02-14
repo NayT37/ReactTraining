@@ -46,6 +46,13 @@ class CoursesList extends Component {
         let _totalPages = 10;
         const IMG_URL = "https://storage.cebroker.com/CEBroker/";
 
+        let filterQuery = this.props.shearchQuery;
+        let filteredCoursesList = this.state.defaultCoursesArr.filter(
+            (filteredCourse) => {
+                return filteredCourse.course.name.toLowerCase().indexOf(filterQuery.toLowerCase()) == ! -1;
+            }
+        );
+
         return (
             <div className="CoursesList">
                 <div className="CoursesList__Header">
@@ -81,13 +88,13 @@ class CoursesList extends Component {
                     {console.log(this.state.defaultCoursesArr)}
                     {/* Rendering Default Courses from DB */}
                     {
-                        this.state.defaultCoursesArr.map(dcourse => {
+                        filteredCoursesList.map(dcourse => {
                             return (
                                 <DefaultCourse
                                     key={dcourse.id}
                                     title={dcourse.course.name}
                                     description={"More info at " + dcourse.course.registrationWebsite}
-                                    time={dcourse.course.totalHours + " Hours"}
+                                    time={dcourse.totalHours + " Hours"}
                                     trainingType={dcourse.course.deliveryMethod.description}
                                     price={dcourse.price != 0 ? dcourse.price + " $" : "Free"}
                                 />

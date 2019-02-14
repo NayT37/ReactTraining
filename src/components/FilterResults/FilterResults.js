@@ -16,11 +16,11 @@ class FilterResults extends Component {
                             <ul>
                                 <li>
                                     <input type="radio" name="CourseType" id="Self" value="male" />
-                                    <label for="Self">Self paced</label>
+                                    <label htmlFor="Self">Self paced</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="CourseType" id="Live" value="male" />
-                                    <label for="Live">Live</label>
+                                    <label htmlFor="Live">Live</label>
                                 </li>
                             </ul>
                         </form>
@@ -35,23 +35,23 @@ class FilterResults extends Component {
                             <ul>
                                 <li>
                                     <input type="radio" name="DeliveryType" id="delivery" value="male" />
-                                    <label for="delivery">Any delivery type</label>
+                                    <label htmlFor="delivery">Any delivery type</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="DeliveryType" id="Computer" value="male" />
-                                    <label for="Computer">Computer-Based Training</label>
+                                    <label htmlFor="Computer">Computer-Based Training</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="DeliveryType" id="Correspondence" value="male" />
-                                    <label for="Correspondence">Correspondence</label>
+                                    <label htmlFor="Correspondence">Correspondence</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="DeliveryType" id="Mailed" value="male" />
-                                    <label for="Mailed">Mailed Material</label>
+                                    <label htmlFor="Mailed">Mailed Material</label>
                                 </li>
                             </ul>
                         </form>
-                        <p class="FakeLink">View More</p>
+                        <p className="FakeLink">View More</p>
                     </div>
                 </div>
 
@@ -63,23 +63,23 @@ class FilterResults extends Component {
                             <ul>
                                 <li>
                                     <input type="radio" name="SubjectArea" id="subject" value="male" />
-                                    <label for="subject">Any subject Area</label>
+                                    <label htmlFor="subject">Any subject Area</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="SubjectArea" id="HIV" value="male" />
-                                    <label for="HIV">HIV/AIDS</label>
+                                    <label htmlFor="HIV">HIV/AIDS</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="SubjectArea" id="Palliative" value="male" />
-                                    <label for="Palliative">End-of-Life Care and Palliative Healrh Care</label>
+                                    <label htmlFor="Palliative">End-of-Life Care and Palliative Healrh Care</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="SubjectArea" id="Domestic" value="male" />
-                                    <label for="Domestic">Domestic Violence</label>
+                                    <label htmlFor="Domestic">Domestic Violence</label>
                                 </li>
                             </ul>
                         </form>
-                        <p class="FakeLink">View More</p>
+                        <p className="FakeLink">View More</p>
                     </div>
                 </div>
             </div>
