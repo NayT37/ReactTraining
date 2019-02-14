@@ -10,6 +10,7 @@
 
 .FeaturedCourse p {
     font-size: 9.5pt;
+    color: #4a5656;
 }
 
 .FeaturedCourse_Img {
@@ -33,6 +34,22 @@
     width: 20%;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.CourseBottomInfo {
+    align-items: center;
+}
+
+.CourseBottomInfo>* {
+    margin-right: 0.35rem;
+}
+
+.CourseBottomInfo>*:nth-child(2) {
+    margin-right: 0.7rem;
+}
+
+.CourseBottomInfo>*:last-child {
+    margin-right: 0;
 }
 
 .CourseTitle {

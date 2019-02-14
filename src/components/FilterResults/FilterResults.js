@@ -5,10 +5,11 @@ class FilterResults extends Component {
     render() {
         return (
             <div className="FilterResults">
-                <h3>FILTER COURSE RESULTS</h3>
-
+                <div className="Header__FilterResults">
+                    <h3>FILTER COURSE RESULTS</h3>
+                </div>
                 {/* First Filter */}
-                <div>
+                <div className="Container__FilterResults">
                     <h5>Course type</h5>
                     <div>
                         <form>
@@ -27,7 +28,7 @@ class FilterResults extends Component {
                 </div>
 
                 {/* Second Filter */}
-                <div>
+                <div className="Container__FilterResults">
                     <h5>Delivery type</h5>
                     <div>
                         <form>
@@ -50,12 +51,12 @@ class FilterResults extends Component {
                                 </li>
                             </ul>
                         </form>
-                        <p>View More</p>
+                        <p class="FakeLink">View More</p>
                     </div>
                 </div>
 
                 {/* Third Filter */}
-                <div>
+                <div className="Container__FilterResults">
                     <h5>Subject area</h5>
                     <div>
                         <form>
@@ -78,7 +79,7 @@ class FilterResults extends Component {
                                 </li>
                             </ul>
                         </form>
-                        <p>View More</p>
+                        <p class="FakeLink">View More</p>
                     </div>
                 </div>
             </div>

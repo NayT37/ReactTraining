@@ -9,8 +9,7 @@ import AuxBar from './components/AuxBar/AuxBar';
 class App extends Component {
 
   render() {
-    let _actualPage = 1;
-    let _totalPages = 10;
+
 
     return (
       <div className="App">
@@ -18,14 +17,12 @@ class App extends Component {
           <AuxBar />
           <MainBar />
         </nav>
-
         <div className="Container App__Container">
           <section className="MainSection MainSection__Filter">
             {/* This section must disappear when responsive comes out */}
             <FilterResults />
           </section>
           <section className="MainSection MainSection__Courses">
-            <p>Page {_actualPage} of {_totalPages} results</p>
             {/* All courses, including featured courses */}
             <CoursesList />
           </section>
