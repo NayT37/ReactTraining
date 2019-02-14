@@ -1,5 +1,59 @@
 .MainBar {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: blue;
+    background-color: #005694;
     color: white;
+    padding-top: 1rem;
+}
+
+.MainBar__Header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.MainBar__Header>div {
+    margin-right: 0.8rem;
+}
+
+.MainBar__Header>div:last-child {
+    margin-right: 0;
+}
+
+.MainBar__SectionTitle {
+    font-size: 17pt;
+}
+
+.SearchBar {
+    background-color: white;
+    width: 53%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    border-radius: 3px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0.7rem;
+}
+
+.SearchBar>input {
+    width: 95%;
+    border: none;
+}
+
+.MainBar__Icon {
+    width: 2rem;
+    margin-right: 2.5rem;
+}
+
+.MainBar__Content {
+    margin-bottom: 2rem;
+}
+
+.MainBar__Content:last-child {
+    margin-bottom: 0;
 }
