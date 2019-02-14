@@ -8,14 +8,25 @@ import AuxBar from './components/AuxBar/AuxBar';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchQuery: ''
+    }
+  }
+
+  ChangeSearchQuery(value) {
+    this.setState({
+      searchQuery: value
+    });
+  }
+
   render() {
-
-
     return (
       <div className="App">
         <nav>
           <AuxBar />
-          <MainBar />
+          <MainBar SearchQueryUpdate={this.ChangeSearchQuery.bind(this)} />
         </nav>
         <div className="Container App__Container">
           <section className="MainSection MainSection__Filter">
@@ -24,7 +35,9 @@ class App extends Component {
           </section>
           <section className="MainSection MainSection__Courses">
             {/* All courses, including featured courses */}
-            <CoursesList />
+            <CoursesList
+              shearchQuery={this.state.searchQuery}
+            />
           </section>
         </div>
 
