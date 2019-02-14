@@ -35,7 +35,7 @@
 
 .SearchBar {
     background-color: white;
-    width: 53%;
+    width: 45%;
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -70,4 +70,10 @@
 
 .SearchBar_Alone {
     margin-bottom: 1rem !important;
+}
+
+.MainBar__TabContainer {
+    width: 15%;
+    min-width: 15rem;
+    margin: 0 auto;
 }

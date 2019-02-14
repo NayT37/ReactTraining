@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './MainBar.css';
 import search_icon from '../../assets/img/search_icon.svg';
 import DropDown from '../DropDown/DropDown';
+import TabGroup from '../TabGroup/TabGroup';
 
 class MainBar extends Component {
 
@@ -68,9 +69,10 @@ class MainBar extends Component {
                         />
                     </div>
 
-                    <div className="TabContainer__MainBar MainBar__Content">
-                        <div><p>Courses</p></div>
-                        <div><p>Providers</p></div>
+                    <div className="MainBar__TabContainer MainBar__Content">
+                        <TabGroup
+                            tabsToShow={["Courses", "Providers"]}
+                        />
                     </div>
                 </div>
             );
