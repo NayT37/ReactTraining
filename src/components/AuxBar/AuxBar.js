@@ -19,7 +19,7 @@ class AuxBar extends Component {
                         </ul>
                     </div>
                     <div className="AuxBar__SecondaryNav">
-                        <button className="Button__Default">Sing in</button>
+                        <button className="Button__Default">Sign in</button>
                         <button className="Button__Green">7 day trial</button>
                     </div>
                 </div>

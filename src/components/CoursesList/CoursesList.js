@@ -9,8 +9,19 @@ class CoursesList extends Component {
     }
 
     render() {
+        let _actualPage = 1;
+        let _totalPages = 10;
         return (
             <div className="CoursesList">
+                <div className="CoursesList__Header">
+                    <p><strong>Page {_actualPage} </strong>of <strong>{_totalPages} results.</strong></p>
+                    <div>
+                        <p>Sort By: </p>
+                        <div>
+                            <p>Desplegable</p>
+                        </div>
+                    </div>
+                </div>
                 <div className="FeaturedCourses__Container">
                     {/* This guy it's gonna be rendered with a list */}
                     <FeaturedCourse
