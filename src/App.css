@@ -1,8 +1,55 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
+    /*     border: 0.5px solid rgba(255, 0, 0, 0.288); */
     box-sizing: border-box;
+    font-family: 'Open Sans', 'Franklin Gothic Book', sans-serif;
+}
+
+body {
+    background-color: #f7fbfc;
+}
+
+button {
+    background: none;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    border-radius: 3px;
+    padding: 0.7rem 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Button__Default {
+    border: 0.5px solid #bec7c7;
+}
+
+.Button__Green {
+    background-color: #00c082;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+.Flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .Container {
@@ -13,10 +60,17 @@
     justify-content: space-around;
 }
 
+.App__Container {
+    margin-top: 2rem;
+}
+
 .MainSection {
     display: flex;
     background-color: white;
     flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.05);
+    height: fit-content;
 }
 
 .MainSection__Filter {
@@ -27,17 +81,15 @@
     width: 65%;
 }
 
-img {
-    display: flex;
-    width: 100%;
+.SectionTitle {
+    /* Erase me */
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* Really dont know */
 
-.PriceTxt {
-    font-size: 20pt;
-    text-align: right;
-}
+
 
 .CourseTitle {
     font-size: 2rem;

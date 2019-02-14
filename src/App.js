@@ -14,10 +14,12 @@ class App extends Component {
 
     return (
       <div className="App">
-        <AuxBar />
-        <MainBar />
+        <nav>
+          <AuxBar />
+          <MainBar />
+        </nav>
 
-        <div className="Container">
+        <div className="Container App__Container">
           <section className="MainSection MainSection__Filter">
             {/* This section must disappear when responsive comes out */}
             <FilterResults />

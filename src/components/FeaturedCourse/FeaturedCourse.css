@@ -2,23 +2,53 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 1px solid gray;
+    border: 0.5px solid #bec7c7;
     justify-content: space-between;
+    margin-bottom: 0.8rem;
+    padding: 0.9rem;
+}
+
+.FeaturedCourse p {
+    font-size: 9.5pt;
 }
 
 .FeaturedCourse_Img {
     display: flex;
-    width: 18%;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
 }
 
 .FeaturedCourse_Info {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 50%;
+    justify-content: space-evenly;
+    padding-left: 1rem;
 }
 
 .FeaturedCourse_EndTag {
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 20%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.CourseTitle {
+    font-size: 12pt;
+}
+
+.PriceTxt {
+    font-size: 12pt !important;
+    text-align: right;
+    font-weight: bold;
+}
+
+.Image__Course {
+    width: 0.8rem;
+}
+
+.Image__EndTag {
+    width: 1rem;
 }

@@ -2,4 +2,104 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
+
+.AuxBar__LimiterContainer {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 0.4rem;
+}
+
+.AuxBar__LogoContainer {
+    display: flex;
+    width: 9rem;
+}
+
+.AuxBar__Container {
+    width: 50%;
+    display: flex;
+}
+
+.AuxBar__ImgContainer {
+    display: flex;
+    width: 1.2rem;
+}
+
+.AuxBar__ListContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.AuxBar__ListContainer>li {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.AuxBar__ListContainer>li:first-child {
+    margin-left: 0rem;
+}
+
+.AuxBar__ListContainer>li:nth-child(4) {
+    color: #00c082;
+}
+
+.AuxBar__ListContainer>li>p {
+    width: 100%;
+    text-align: center;
+    font-size: 11pt;
+}
+
+.AuxBar__SecondaryNav {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.AuxBar__SecondaryNav>button:first-child {
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 992px) {
+    .AuxBar__Container {
+        display: none;
+        width: 0;
+    }
+    .AuxBar__SecondaryNav {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .AuxBar__ListContainer>li>p {
+        font-size: 1.2vw;
+    }
+}
+
+/*
+ @media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 1200px) {} 
+*/
