@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
+/*     border: 0.5px solid rgba(255, 0, 0, 0.288); */
     box-sizing: border-box;
     font-family: 'Open Sans', 'Franklin Gothic Book', sans-serif;
 }
@@ -76,7 +76,7 @@ nav {
 }
 
 .MainSection__Filter {
-    width: 25%;
+    width: 30%;
 }
 
 .MainSection__Courses {

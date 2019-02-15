@@ -19,6 +19,9 @@ class TabGroup extends Component {
 
     UpdateTabs(value) {
         localStorage.setItem("Tab", value);
+        if (value == 1) {
+            alert("We still doesn't have providers, please remain in courses");
+        }
     }
 
     render() {
