@@ -2,8 +2,13 @@
     margin: 0 auto;
     display: flex;
     width: 100%;
+    height: 100%;
     display: flex;
     font-size: 11pt;
+}
+
+.TabChild__Underline {
+    border-bottom: 5px solid #00c082;
 }
 
 .TabChild>span {
@@ -11,4 +16,5 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0.5rem 0;
 }

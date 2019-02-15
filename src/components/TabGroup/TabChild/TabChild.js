@@ -41,7 +41,7 @@ class TabChild extends Component {
 
     render() {
         return (
-            <div className="TabChild">
+            <div className="TabChild TabChild__Underline">
                 <span onClick={this.TabPressed.bind(this)}>
                     <p ref={this.titleRef}>{this.state.name}</p>
                 </span>
